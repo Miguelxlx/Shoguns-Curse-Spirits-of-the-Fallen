@@ -38,29 +38,35 @@ Group 19
         - Requirements/Design Doc:
         - Implementation and Testing Document:
         - Source Code:
-        - Video/Presentation: N/A
+        - Video/Presentation: 
     2) Joseph White
         - Progress Report:
         - Requirements/Design Doc:
         - Implementation and Testing Document:
         - Source Code:
-        - Video/Presentation: N/A
+        - Video/Presentation: 
     3) Loren Van Malleghem
         - Progress Report:
         - Requirements/Design Doc:
         - Implementation and Testing Document:
         - Source Code:
-        - Video/Presentation: N/A
+        - Video/Presentation: 
     4) Miguel Montesinos
         - Progress Report:
         - Requirements/Design Doc:
         - Implementation and Testing Document:
         - Source Code:
-        - Video/Presentation: N/A
+        - Video/Presentation: 
     5) Osher Steel
         - Progress Report:
         - Requirements/Design Doc:
         - Implementation and Testing Document:
         - Source Code:
-        - Video/Presentation: N/A
--------------------
+        - Video/Presentation:
+----------------------------------------------------------------------------------------
+6) Plans for Increment2
+
+----------------------------------------------------------------------------------------
+7) Link to Video
+
+----------------------------------------------------------------------------------------

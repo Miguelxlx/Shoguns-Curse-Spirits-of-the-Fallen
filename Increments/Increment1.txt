@@ -1,0 +1,18 @@
+Progress Report
+Increment 1
+Group 19
+
+1) Team Members
+    1) Danny Miranda
+        - Github: dannymiranda72
+        - FSUID: dm19d
+    2) Joseph White
+        - Github:
+        - FSUID:
+    3) Loren Van Malleghem
+        - Github:
+        - FSUID:
+    4) Miguel Montesinos
+        - Github:
+        - FSUID:
+    

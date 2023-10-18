@@ -15,4 +15,52 @@ Group 19
     4) Miguel Montesinos
         - Github:
         - FSUID:
-    
+    5) Osher Steel
+        - Github:
+        - FSUID:
+----------------------------------------------------------------------------------------
+2) Project Title and Description
+    Title: Shogun's Curse - Spirits of the Fallen
+    Description:
+----------------------------------------------------------------------------------------
+3) Accomplishments and Overall Project Status During this Increment
+    Accomplishments:
+    Project Status:
+----------------------------------------------------------------------------------------
+4) Challenges, Changes in the Plan, Scope of the Project, Things that went Wrong
+    Challenges/How We dealt w them:
+    Changes in the plan/Reasons for them:
+    Anything that Went Wrong:
+----------------------------------------------------------------------------------------
+5) Team Member Contribution to each of the following:
+    1) Danny Miranda
+        - Progress Report:
+        - Requirements/Design Doc:
+        - Implementation and Testing Document:
+        - Source Code:
+        - Video/Presentation: N/A
+    2) Joseph White
+        - Progress Report:
+        - Requirements/Design Doc:
+        - Implementation and Testing Document:
+        - Source Code:
+        - Video/Presentation: N/A
+    3) Loren Van Malleghem
+        - Progress Report:
+        - Requirements/Design Doc:
+        - Implementation and Testing Document:
+        - Source Code:
+        - Video/Presentation: N/A
+    4) Miguel Montesinos
+        - Progress Report:
+        - Requirements/Design Doc:
+        - Implementation and Testing Document:
+        - Source Code:
+        - Video/Presentation: N/A
+    5) Osher Steel
+        - Progress Report:
+        - Requirements/Design Doc:
+        - Implementation and Testing Document:
+        - Source Code:
+        - Video/Presentation: N/A
+-------------------

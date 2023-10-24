@@ -23,7 +23,12 @@ public class EnemyScript : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(this.transform.position, player.position, speed * Time.deltaTime);
         }
+        else
+        {
+            //Move randomly
+        }
     }
+
 
     private void OnDrawGizmosSelected()
     {

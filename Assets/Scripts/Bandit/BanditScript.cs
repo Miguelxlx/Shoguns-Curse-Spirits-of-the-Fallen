@@ -5,7 +5,9 @@ using UnityEngine;
 public class BanditScript : MonoBehaviour
 {
     public Animator animator;
-    public Transform Player;
+    public Rigidbody2D rb;
+    public Transform player;
+    public float attackRange = 3f;
 
 
     public int maxHealth = 100;
@@ -43,5 +45,10 @@ public class BanditScript : MonoBehaviour
 
         //GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.DrawWireSphere(rb.position, attackRange);
     }
 }

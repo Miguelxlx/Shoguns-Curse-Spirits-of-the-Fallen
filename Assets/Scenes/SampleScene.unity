@@ -278,11 +278,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1.89
-  lineOfSite: 10.52
+  lineOfSight: 0
   shootingRange: 3.66
   fireRate: 1.96
   bullet: {fileID: 4947999134987251271, guid: a5a22e3745017477a99fdcecf8d40bc3, type: 3}
   bulletParent: {fileID: 1496235855}
+  sprite: {fileID: 1845523673}
 --- !u!212 &1845523673
 SpriteRenderer:
   m_ObjectHideFlags: 0

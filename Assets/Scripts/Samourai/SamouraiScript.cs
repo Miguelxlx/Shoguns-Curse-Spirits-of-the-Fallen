@@ -5,6 +5,7 @@ using UnityEngine;
 public class SamouraiScript : MonoBehaviour
 {
     public float moveSpeed = 5f;
+
     private float dirX;
 
     public Rigidbody2D rb;
@@ -20,6 +21,18 @@ public class SamouraiScript : MonoBehaviour
     public int attackDamage = 40;
 
     private bool isRight = true;
+
+    public int maxHealth = 100;
+    int currentHealth;
+
+    public bool alive = true;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        currentHealth = maxHealth;
+
+    }
 
     // Update is called once per frame
     void Update()
@@ -94,6 +107,29 @@ public class SamouraiScript : MonoBehaviour
 
     }
 
+    public void takeDamage(int damage)
+    {
+        animator.SetTrigger("Hurt");
+
+        currentHealth -= damage;
+
+        Debug.Log(currentHealth + " health");
+
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        Debug.Log("Player Died");
+        animator.SetBool("IsDead", true);
+
+        //GetComponent<Collider2D>().enabled = false;
+        this.enabled = false;
+        alive = false;
+    }
 
     private void OnDrawGizmosSelected()
     {

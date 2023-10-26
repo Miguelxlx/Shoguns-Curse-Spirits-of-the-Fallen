@@ -346,6 +346,7 @@ GameObject:
   - component: {fileID: 752441989}
   - component: {fileID: 752441988}
   - component: {fileID: 752441987}
+  - component: {fileID: 752441993}
   m_Layer: 10
   m_Name: Enemy
   m_TagString: Untagged
@@ -366,6 +367,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 752441988}
+  rb: {fileID: 752441990}
+  player: {fileID: 1399420406}
+  attackRange: 0.78
   maxHealth: 100
 --- !u!95 &752441988
 Animator:
@@ -527,6 +531,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &752441993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752441986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b02f341625a3410284cf35ccaa61579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackDamage: 20
+  attackOffset: {x: 0, y: 0, z: 0}
+  attackRange: 1
+  attackMask:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!1 &840531214
 GameObject:
   m_ObjectHideFlags: 0
@@ -617,7 +639,7 @@ GameObject:
   - component: {fileID: 1399420407}
   - component: {fileID: 1399420408}
   - component: {fileID: 1399420409}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Samourai
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -788,6 +810,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   attackDamage: 40
+  maxHealth: 100
+  alive: 1
 --- !u!95 &1399420409
 Animator:
   serializedVersion: 5

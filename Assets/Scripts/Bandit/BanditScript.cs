@@ -13,10 +13,13 @@ public class BanditScript : MonoBehaviour
     public int maxHealth = 100;
     int currentHealth;
 
+    public bool alive;
+
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
+        alive = true;
         
     }
 
@@ -28,13 +31,16 @@ public class BanditScript : MonoBehaviour
 
     public void takeDamage(int damage)
     {
-        animator.SetTrigger("Hurt");
+        if(alive)
+        { 
+            animator.SetTrigger("Hurt");
 
-        currentHealth -= damage;
+            currentHealth -= damage;
 
-        if(currentHealth <= 0)
-        {
-            Die();
+            if (currentHealth <= 0)
+            {
+                Die();
+            }
         }
     }
 
@@ -45,6 +51,7 @@ public class BanditScript : MonoBehaviour
 
         //GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
+        alive = false;
     }
 
     private void OnDrawGizmosSelected()

@@ -44,18 +44,23 @@ public class Health : MonoBehaviour
         {
             if (!dead)
             {
-                //Deactivate all attached components
-                foreach (Behaviour comp in components)
-                {
-                    comp.enabled = false;
-                }
-
-                anim.SetBool("Grounded", true);
-                anim.SetTrigger("Die");
-
-                dead = true;
+                Die();
             }
         }
+    }
+
+    private void Die()
+    {
+        //Deactivate all attached components
+        foreach (Behaviour comp in components)
+        {
+            comp.enabled = false;
+        }
+
+        anim.SetBool("Grounded", true);
+        anim.SetTrigger("Die");
+
+        dead = true;
     }
 
     public void addHealth(float _value)
@@ -112,8 +117,7 @@ public class Health : MonoBehaviour
         Debug.Log("Trigger");
         if (collision.tag == "Fall")
         {
-            Debug.Log("Fall");
-            takeDamage(startingHealth);
+            Die();
         }
     }
 }

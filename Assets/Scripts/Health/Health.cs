@@ -111,13 +111,4 @@ public class Health : MonoBehaviour
     {
         return dead;
     }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Debug.Log("Trigger");
-        if (collision.tag == "Fall")
-        {
-            Die();
-        }
-    }
 }

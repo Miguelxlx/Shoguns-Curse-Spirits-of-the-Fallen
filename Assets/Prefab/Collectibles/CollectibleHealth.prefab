@@ -144,3 +144,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthValue: 1
+  collectSound: {fileID: 8300000, guid: 18b8a95e5b2958e41b9689c997640f98, type: 3}

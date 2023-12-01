@@ -18,6 +18,8 @@ public class Bandit: MonoBehaviour
     [SerializeField] private Transform attackPointRight;
     [SerializeField] private float attackRange = 0.5f;
 
+    [Header("Attack Sound")]
+    [SerializeField] private AudioClip attackSound;
 
     private Health playerHealth;
     private PlayerAttack playerAttack;
@@ -40,6 +42,7 @@ public class Bandit: MonoBehaviour
             {
                 cooldownTimer = 0;
                 anim.SetTrigger("Attack");
+                PlayAttackSound(); // Play the attack sound here
             }
         }
 
@@ -96,8 +99,18 @@ public class Bandit: MonoBehaviour
         {
             playerHealth.takeDamage(damage);
             playerAttack.resetCoolDown();
+            //PlayAttackSound(); // would be better to put sword hit and find another sound for the attack
         }
     }
+
+    private void PlayAttackSound()
+    {
+        if (attackSound != null)
+        {
+            SoundManager.instance.PlaySound(attackSound);
+        }
+    }
+
 
     public void resetCoolDown()
     {

@@ -20,6 +20,8 @@ public class PlayerAttack : MonoBehaviour
 
     [Header("Enemy Layer")]
     [SerializeField] private LayerMask enemyLayer;
+    [SerializeField] private AudioClip swordSound;
+
 
     private Animator anim;
     private PlayerMovement playerMovement;
@@ -34,7 +36,7 @@ public class PlayerAttack : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.Space) && coolDownTimer > attackCoolDown && playerMovement.canAttack())
+        if (Input.GetKey(KeyCode.Return) && coolDownTimer > attackCoolDown && playerMovement.canAttack())
             Attack();
 
         coolDownTimer += Time.deltaTime;
@@ -42,6 +44,7 @@ public class PlayerAttack : MonoBehaviour
 
     private void Attack()
     {
+        SoundManager.instance.PlaySound(swordSound);
         anim.SetTrigger("Attack");
         coolDownTimer = 0;
     }

@@ -176,6 +176,7 @@ MonoBehaviour:
   - {fileID: 4560260274800961058}
   - {fileID: 6973967594096180034}
   - {fileID: 8410190810766329925}
+  attackSound: {fileID: 8300000, guid: 9ca864a2e2ac85d44beb60d0da7b26fd, type: 3}
 --- !u!61 &8685906393970261587
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -8,12 +8,15 @@ public class ArrowTrap : MonoBehaviour
     [SerializeField] private Transform arrowpoint;
     [SerializeField] private GameObject[] arrows;
 
+    [Header("Attack Sound")]
+    [SerializeField] private AudioClip attackSound;
+
     private float cooldownTimer;
 
     private void Attack()
     {
         cooldownTimer = 0;
-
+        SoundManager.instance.PlaySound(attackSound);
         arrows[FindArrow()].transform.position = arrowpoint.position;
         arrows[FindArrow()].GetComponent<Projectile>().ActivateProjectile();
     }

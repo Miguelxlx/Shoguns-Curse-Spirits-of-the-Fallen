@@ -20,6 +20,12 @@ public class Health : MonoBehaviour
     [SerializeField] private Behaviour[] components;
     private bool invulnerable;
 
+    [Header("Death Sound")]
+    [SerializeField] private AudioClip deathSound;
+
+    [Header("Hurt Sound")]
+    [SerializeField] private AudioClip hurtSound;
+
     private void Awake()
     {
         anim = GetComponent<Animator>();
@@ -39,6 +45,7 @@ public class Health : MonoBehaviour
         {
             anim.SetTrigger("Hurt");
             StartCoroutine(Invulnerability());
+            SoundManager.instance.PlaySound(hurtSound);
         }
         else
         {
@@ -61,6 +68,7 @@ public class Health : MonoBehaviour
         anim.SetTrigger("Die");
 
         dead = true;
+        SoundManager.instance.PlaySound(deathSound);
     }
 
     public void addHealth(float _value)

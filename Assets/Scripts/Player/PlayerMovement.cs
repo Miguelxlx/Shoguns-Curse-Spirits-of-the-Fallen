@@ -20,6 +20,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float wallJumpX; //How much time the player can hang in the air before jumping
     [SerializeField] private float wallJumpY;
 
+    [Header("Jump Sound")]
+    [SerializeField] private AudioClip JumpSound;
+
     [Header("Layers")]
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private LayerMask wallLayer;
@@ -69,11 +72,17 @@ public class PlayerMovement : MonoBehaviour
         anim.SetBool("Grounded", isGrounded());
 
         //Jump
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
             Jump();
 
+            if(Input.GetKeyDown(KeyCode.Space) && !isGrounded() && wallJumpCooldown > 0)
+            {
+                SoundManager.instance.PlaySound(JumpSound);
+            }
+        }
         //Adjustable Jump Height
-        if (Input.GetKeyUp(KeyCode.UpArrow))
+        if (Input.GetKeyUp(KeyCode.Space))
             body.velocity = new Vector2(body.velocity.x, body.velocity.y / 2);
 
         body.gravityScale = 7;
@@ -93,10 +102,10 @@ public class PlayerMovement : MonoBehaviour
     {
         if (coyoteCounter < 0 && jumpCounter <= 0) return;
 
-        // SoundManager.instance.PlaySound(JumpSound);
-
         if (isGrounded())
+        {
             body.velocity = new Vector2(body.velocity.x, jumpPower);
+        }
         else
         {
             //If not on the ground and coyote counter bigger than 0 do a normal jump

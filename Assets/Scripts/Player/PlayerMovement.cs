@@ -72,17 +72,17 @@ public class PlayerMovement : MonoBehaviour
         anim.SetBool("Grounded", isGrounded());
 
         //Jump
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             Jump();
 
-            if(Input.GetKeyDown(KeyCode.Space) && !isGrounded() && wallJumpCooldown > 0)
+            if(Input.GetKeyDown(KeyCode.UpArrow) && !isGrounded() && wallJumpCooldown > 0)
             {
                 SoundManager.instance.PlaySound(JumpSound);
             }
         }
         //Adjustable Jump Height
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (Input.GetKeyUp(KeyCode.UpArrow))
             body.velocity = new Vector2(body.velocity.x, body.velocity.y / 2);
 
         body.gravityScale = 7;

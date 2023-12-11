@@ -61,6 +61,7 @@ public class EnemyPatrol : MonoBehaviour
 
     private void DirectionChange() //Idle until timer stops and then change direction
     {
+
         anim.SetBool("Moving", false);
 
         idleTimer += Time.deltaTime;
@@ -85,5 +86,10 @@ public class EnemyPatrol : MonoBehaviour
     public bool isMovingLeft()
     {
         return movingLeft;
+    }
+
+    public float getSpeed()
+    {
+        return speed;
     }
 }

@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Movement Parameters")]
     [SerializeField] private float speed;
     [SerializeField] private float jumpPower;
+    [SerializeField] private float gravityScale;
 
     [Header("Coyote Time")]
     [SerializeField] private float coyoteTime; //How much time the player can hang in the air before jumping
@@ -43,6 +44,8 @@ public class PlayerMovement : MonoBehaviour
     {
         //Grab Referencefrom object
         body = GetComponent<Rigidbody2D>();
+        body.gravityScale = gravityScale;
+
         anim = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
 
@@ -85,16 +88,25 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.UpArrow))
             body.velocity = new Vector2(body.velocity.x, body.velocity.y / 2);
 
-        body.gravityScale = 7;
-        body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
-
-        if (isGrounded())
+        if (!isGrounded() && onWall() && Input.GetKeyUp(KeyCode.LeftArrow) && Input.GetKeyUp(KeyCode.RightArrow))
         {
-            coyoteCounter = coyoteTime; //Reset coyote counter when on the ground
-            jumpCounter = extraJumps;
+            Debug.Log("On Wall");
+            body.gravityScale = 0;
+            body.velocity = Vector2.zero;
         }
         else
-            coyoteCounter -= Time.deltaTime;
+        {
+            body.gravityScale = 7;
+            body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
+
+            if (isGrounded())
+            {
+                coyoteCounter = coyoteTime; //Reset coyote counter when on the ground
+                jumpCounter = extraJumps; //Reset jump counter to extra jump value
+            }
+            else
+                coyoteCounter -= Time.deltaTime; //Start decreasing coyote counter when not on the ground
+        }
 
     }
 
@@ -102,26 +114,31 @@ public class PlayerMovement : MonoBehaviour
     {
         if (coyoteCounter < 0 && jumpCounter <= 0) return;
 
-        if (isGrounded())
-        {
-            body.velocity = new Vector2(body.velocity.x, jumpPower);
-        }
+        if (onWall() && !isGrounded())
+            WallJump();
         else
         {
-            //If not on the ground and coyote counter bigger than 0 do a normal jump
-            if (coyoteCounter > 0)
+            if (isGrounded())
+            {
                 body.velocity = new Vector2(body.velocity.x, jumpPower);
+            }
             else
             {
-                if (jumpCounter > 0)
-                {
+                //If not on the ground and coyote counter bigger than 0 do a normal jump
+                if (coyoteCounter > 0)
                     body.velocity = new Vector2(body.velocity.x, jumpPower);
-                    jumpCounter--;
+                else
+                {
+                    if (jumpCounter > 0)
+                    {
+                        body.velocity = new Vector2(body.velocity.x, jumpPower);
+                        jumpCounter--;
+                    }
                 }
             }
-        }
 
-        coyoteCounter = 0;
+            coyoteCounter = 0;
+        }
 
 }
 
@@ -130,6 +147,19 @@ public class PlayerMovement : MonoBehaviour
         //Checks for collision underneath the player
         RaycastHit2D raycast = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.1f, groundLayer);
         return raycast.collider != null;
+    }
+
+    private void WallJump()
+    {
+        Debug.Log("Wall Jump");
+        body.AddForce(new Vector2(-Mathf.Sign(transform.localScale.x) * wallJumpX, wallJumpY));
+        wallJumpCooldown = 0;
+    }
+
+    private bool onWall()
+    {
+        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, new Vector2(transform.localScale.x, 0), 0.1f, wallLayer);
+        return raycastHit.collider != null;
     }
 
     public bool canAttack()

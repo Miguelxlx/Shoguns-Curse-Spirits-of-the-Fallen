@@ -58,7 +58,6 @@ public class PlayerAttack : MonoBehaviour
             foreach (Collider2D enemy in hitEnemies)
             {
                 enemy.GetComponent<Health>().takeDamage(damage);
-                enemy.GetComponent<Bandit>().resetCoolDown();
             }
         }
         else
@@ -67,7 +66,6 @@ public class PlayerAttack : MonoBehaviour
             foreach (Collider2D enemy in hitEnemies)
             {
                 enemy.GetComponent<Health>().takeDamage(damage);
-                enemy.GetComponent<Bandit>().resetCoolDown();
             }
         }
     }

@@ -1,10 +1,10 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ArrowTrap : MonoBehaviour
 {
-    [SerializeField] private float attackCooldown;
+    [SerializeField] private float minCooldown = 1f;
+    [SerializeField] private float maxCooldown = 3f;
     [SerializeField] private Transform arrowpoint;
     [SerializeField] private GameObject[] arrows;
 
@@ -12,8 +12,24 @@ public class ArrowTrap : MonoBehaviour
     [SerializeField] private AudioClip attackSound;
 
     private float cooldownTimer;
+    private bool canStart;
 
-    private void Attack()
+    private void Awake()
+    {
+        canStart = false;
+
+        StartCoroutine(StartAfterDelay());
+    }
+
+    private IEnumerator StartAfterDelay()
+    {
+        float delay = Random.Range(0f, 3f);
+        yield return new WaitForSeconds(delay);
+
+        canStart = true;
+    }
+
+    private void FireArrow()
     {
         cooldownTimer = 0;
         SoundManager.instance.PlaySound(attackSound);
@@ -23,7 +39,7 @@ public class ArrowTrap : MonoBehaviour
 
     private int FindArrow()
     {
-        for(int i=0; i<arrows.Length; i++)
+        for (int i = 0; i < arrows.Length; i++)
         {
             if (!arrows[i].activeInHierarchy)
                 return i;
@@ -34,9 +50,16 @@ public class ArrowTrap : MonoBehaviour
 
     private void Update()
     {
-        cooldownTimer += Time.deltaTime;
-        if (cooldownTimer >= attackCooldown)
-            Attack();
+        if (canStart)
+        {
+            cooldownTimer += Time.deltaTime;
+            if (cooldownTimer >= GetRandomCooldown())
+                FireArrow();
+        }
     }
 
+    private float GetRandomCooldown()
+    {
+        return Random.Range(minCooldown, maxCooldown);
+    }
 }

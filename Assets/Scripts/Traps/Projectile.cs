@@ -9,8 +9,6 @@ public class Projectile : EnemyDamage
     [SerializeField] private float lifetime;
 
 
-
-
     public void ActivateProjectile()
     {
         gameObject.SetActive(true);
@@ -32,11 +30,19 @@ public class Projectile : EnemyDamage
     private void OnTriggerEnter2D(Collider2D collision)
     {
         base.OnTriggerEnter2D(collision);
+        gameObject.SetActive(false);
 
-        if (collision.gameObject.layer == 7 || collision.gameObject.tag == "Player")
+        if (collision.gameObject.layer == 7 || collision.gameObject.tag =="Player")
         {
             gameObject.SetActive(false);
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.layer == 7)
+        {
+            gameObject.SetActive(false);
+        }
+    }
 }

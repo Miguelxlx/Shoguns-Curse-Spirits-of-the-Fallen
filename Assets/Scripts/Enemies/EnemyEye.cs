@@ -48,7 +48,10 @@ public class EnemyEye : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Player")
-           collision.GetComponent<Health>().takeDamage(1);
+        if (!GetComponent<Health>().isDead())
+        {
+            if (collision.tag == "Player")
+                collision.GetComponent<Health>().takeDamage(1);
+        }
     }
 }

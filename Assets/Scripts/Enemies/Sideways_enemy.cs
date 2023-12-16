@@ -7,37 +7,58 @@ public class Sideways_enemy : MonoBehaviour
     [SerializeField] private float damage;
     [SerializeField] private float movementDistance;
     [SerializeField] private float speed;
+    [SerializeField] private bool movingHorizontally;
+    [SerializeField] private bool startRightOrUp;
 
-    private bool movingLeft;
-    private float leftEdge;
-    private float rightEdge;
+
+    private bool movingRightOrUp;
+    private Vector2 v_speed;
+
+    private Vector2 edges;
 
 
     private void Awake()
     {
-        leftEdge = transform.position.x - movementDistance;
-        rightEdge = transform.position.x + movementDistance;
+        movingRightOrUp = startRightOrUp;
+
+        //Adjust edges depending on rotation of the object
+        if (movingHorizontally)
+        {
+            edges.x = transform.position.x - movementDistance;
+            edges.y = transform.position.x + movementDistance;
+
+            v_speed = new Vector2(speed, 0);
+        }
+        else
+        {
+            edges.x = transform.position.y - movementDistance;
+            edges.y = transform.position.y + movementDistance;
+
+            v_speed = new Vector2(0, speed);
+        }
+
     }
 
     private void Update()
     {
-        if (movingLeft)
+
+        if (movingRightOrUp)
         {
-            if (transform.position.x > leftEdge)
+            if ((movingHorizontally && transform.position.x < edges.y )|| (!movingHorizontally && transform.position.y < edges.y ))
             {
-                transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y, transform.position.z);
+                transform.position = new Vector3(transform.position.x + v_speed.x * Time.deltaTime, transform.position.y + v_speed.y * Time.deltaTime, transform.position.z);
             }
             else
-                movingLeft = false;
+                movingRightOrUp = false;
         }
         else
         {
-            if (transform.position.x < rightEdge)
+            if ((movingHorizontally && transform.position.x > edges.x) || (!movingHorizontally && transform.position.y > edges.x))
             {
-                transform.position = new Vector3(transform.position.x + speed * Time.deltaTime, transform.position.y, transform.position.z);
+                transform.position = new Vector3(transform.position.x - v_speed.x * Time.deltaTime, transform.position.y - v_speed.y * Time.deltaTime, transform.position.z);
             }
             else
-                movingLeft = true;
+                movingRightOrUp = true;
         }
     }
 

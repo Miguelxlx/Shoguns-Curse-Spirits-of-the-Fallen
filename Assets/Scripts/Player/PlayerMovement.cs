@@ -28,8 +28,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private LayerMask wallLayer;
 
-    [Header("Player Scale")]
-    [SerializeField] private Vector3 playerScale;
+    private Vector3 playerScale;
 
     private Rigidbody2D body;
     private Animator anim;
@@ -90,7 +89,6 @@ public class PlayerMovement : MonoBehaviour
 
         if (!isGrounded() && onWall() && Input.GetKeyUp(KeyCode.LeftArrow) && Input.GetKeyUp(KeyCode.RightArrow))
         {
-            Debug.Log("On Wall");
             body.gravityScale = 0;
             body.velocity = Vector2.zero;
         }
@@ -151,7 +149,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void WallJump()
     {
-        Debug.Log("Wall Jump");
         body.AddForce(new Vector2(-Mathf.Sign(transform.localScale.x) * wallJumpX, wallJumpY));
         wallJumpCooldown = 0;
     }

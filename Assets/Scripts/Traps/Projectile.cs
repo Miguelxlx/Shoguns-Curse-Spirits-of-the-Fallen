@@ -6,14 +6,21 @@ public class Projectile : EnemyDamage
 {
     [SerializeField] private float speed;
     [SerializeField] private float resetTime;
+    [SerializeField] private float lifetime;
 
-    private float lifetime;
+
 
 
     public void ActivateProjectile()
     {
-        lifetime = 0;
         gameObject.SetActive(true);
+        StartCoroutine(DeactivateAfterLifetime());
+    }
+
+    private IEnumerator DeactivateAfterLifetime()
+    {
+        yield return new WaitForSeconds(lifetime);
+        gameObject.SetActive(false);
     }
 
     public void Update()
@@ -25,6 +32,11 @@ public class Projectile : EnemyDamage
     private void OnTriggerEnter2D(Collider2D collision)
     {
         base.OnTriggerEnter2D(collision);
-        gameObject.SetActive(false);
+
+        if (collision.gameObject.layer == 7 || collision.gameObject.tag == "Player")
+        {
+            gameObject.SetActive(false);
+        }
     }
+
 }

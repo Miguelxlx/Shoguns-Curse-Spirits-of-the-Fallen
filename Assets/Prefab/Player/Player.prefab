@@ -33,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 1290074819265952530}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.15, y: 0.44, z: 0}
+  m_LocalPosition: {x: -9.08, y: -0.43, z: 0}
   m_LocalScale: {x: 2.3, y: 2.3, z: 2.3}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -179,17 +179,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   jumpPower: 20
+  gravityScale: 0
   coyoteTime: 0.25
   extraJumps: 1
-  wallJumpX: 1000
+  wallJumpX: 1500
   wallJumpY: 1000
+  JumpSound: {fileID: 8300000, guid: cd8194e328932b04ea173ced711457da, type: 3}
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
   wallLayer:
     serializedVersion: 2
-    m_Bits: 0
-  playerScale: {x: 0, y: 0, z: 0}
+    m_Bits: 128
 --- !u!114 &8188473948842819071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,6 +212,7 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 1024
+  swordSound: {fileID: 8300000, guid: c0d5720fd5beafd4da998cc50e351dda, type: 3}
 --- !u!114 &1564406405180685572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -230,6 +232,8 @@ MonoBehaviour:
   - {fileID: 7723227377655291562}
   - {fileID: 1564406405180685572}
   - {fileID: 8188473948842819071}
+  deathSound: {fileID: 8300000, guid: df7c3e5a886cff84b96f41ab2b6a81ec, type: 3}
+  hurtSound: {fileID: 8300000, guid: dcd19add68343044e93e1d6deee59354, type: 3}
 --- !u!114 &3028132680739043611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,7 +292,7 @@ Transform:
   m_GameObject: {fileID: 2021313014150541878}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.392, y: 0.026, z: 0}
+  m_LocalPosition: {x: -0.55, y: -0.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -269,6 +269,7 @@ MonoBehaviour:
   attackPointLeft: {fileID: 4378778839292468156}
   attackPointRight: {fileID: 4070858046086439131}
   attackRange: 0.46
+  attackSound: {fileID: 0}
 --- !u!114 &1728394954547238088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -281,12 +282,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bb76f3ac64fb43a69111171cc31be4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 3
+  startingHealth: 2
   iFramesDuration: 2
   numberOfFlashes: 3
   components:
   - {fileID: 7222389771689381032}
   - {fileID: 319051521289919752}
+  deathSound: {fileID: 0}
+  hurtSound: {fileID: 0}
 --- !u!95 &9075829761524093071
 Animator:
   serializedVersion: 5

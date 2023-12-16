@@ -36,7 +36,7 @@ public class PlayerAttack : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.Return) && coolDownTimer > attackCoolDown && playerMovement.canAttack())
+        if (Input.GetKey(KeyCode.Space) && coolDownTimer > attackCoolDown && playerMovement.canAttack())
             Attack();
 
         coolDownTimer += Time.deltaTime;
@@ -51,22 +51,11 @@ public class PlayerAttack : MonoBehaviour
 
     private void DamageEnemy()
     {
-        if (playerMovement.isLookingRight())
+        Debug.Log("Player lookign Right");
+        Collider2D[] hitEnemies = Physics2D.OverlapBoxAll(attackPointRight.position, new Vector2(attackRangeX, attackRangeY), 0, enemyLayer);
+        foreach (Collider2D enemy in hitEnemies)
         {
-            Collider2D[] hitEnemies = Physics2D.OverlapBoxAll(attackPointLeft.position, new Vector2(attackRangeX, attackRangeY), 0, enemyLayer);
-
-            foreach (Collider2D enemy in hitEnemies)
-            {
-                enemy.GetComponent<Health>().takeDamage(damage);
-            }
-        }
-        else
-        {
-            Collider2D[] hitEnemies = Physics2D.OverlapBoxAll(attackPointRight.position, new Vector2(attackRangeX, attackRangeY), 0, enemyLayer);
-            foreach (Collider2D enemy in hitEnemies)
-            {
-                enemy.GetComponent<Health>().takeDamage(damage);
-            }
+            enemy.GetComponent<Health>().takeDamage(damage);
         }
     }
 

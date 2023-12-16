@@ -32,6 +32,7 @@ public class Health : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
 
         currentHealth = startingHealth;
+
         dead = false;
     }
 
@@ -40,6 +41,7 @@ public class Health : MonoBehaviour
         if (invulnerable) return;
 
         currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
+
 
         if (currentHealth > 0)
         {
@@ -58,9 +60,11 @@ public class Health : MonoBehaviour
 
     private void Die()
     {
+        Debug.Log("Flying eye Dies");
         //Deactivate all attached components
         foreach (Behaviour comp in components)
         {
+            Debug.Log("Disabling component: " + comp.GetType().Name);
             comp.enabled = false;
         }
 
@@ -79,6 +83,8 @@ public class Health : MonoBehaviour
 
     public void Respawn()
     {
+        Debug.Log("Respawn");
+
         dead = false;
 
         addHealth(startingHealth);

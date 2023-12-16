@@ -56,6 +56,27 @@ public class Firetrap : MonoBehaviour
 
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            playerhealth = collision.gameObject.GetComponent<Health>();
+            if (!triggered)
+                StartActivation();
+
+            if (active)
+                collision.gameObject.GetComponent<Health>().takeDamage(damage);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+            playerhealth = null;
+
+    }
+
+
     private void StartActivation()
     {
         triggered = true;

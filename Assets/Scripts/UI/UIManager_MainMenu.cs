@@ -14,12 +14,17 @@ public class UIManager_MainMenu : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 
     public void Commands()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
+    }
+
+    public void Back()
+    {
+        SceneManager.LoadScene(0);
     }
 
     public void Quit()

@@ -2034,9 +2034,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 6
-  lifetime: 4
 --- !u!212 &80886838
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3479,9 +3476,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!212 &132847633
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3710,9 +3704,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 6
-  lifetime: 4
 --- !u!212 &142816499
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5465,9 +5456,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 6
-  lifetime: 4
 --- !u!212 &211795665
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7316,9 +7304,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 6
-  lifetime: 4
 --- !u!212 &278138714
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8136,9 +8121,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!212 &329289474
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8974,9 +8956,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 6
-  lifetime: 4
 --- !u!212 &359093263
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11695,9 +11674,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!212 &518478268
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12851,9 +12827,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!212 &565533467
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14006,9 +13979,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!212 &631997767
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14153,9 +14123,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 6
-  lifetime: 4
 --- !u!212 &632887122
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15134,9 +15101,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!212 &683090429
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15869,9 +15833,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!212 &709560574
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16561,9 +16522,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 6
-  lifetime: 4
 --- !u!212 &754222654
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18843,7 +18801,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77eee99f438a94ff58ccb5f3124a0c57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCooldown: 2
+  resetTime: 3
+  lifetime: 0.5
+  speed: 8
   arrowpoint: {fileID: 2145134310}
   arrows:
   - {fileID: 1398581221}
@@ -19286,7 +19246,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77eee99f438a94ff58ccb5f3124a0c57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCooldown: 2
+  resetTime: 4
+  lifetime: 5
+  speed: 15
   arrowpoint: {fileID: 1520335110}
   arrows:
   - {fileID: 1852832463}
@@ -20603,9 +20565,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!212 &936943575
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21250,9 +21209,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!212 &972701970
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22401,9 +22357,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!212 &1038003973
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22800,9 +22753,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!212 &1051711143
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23739,9 +23689,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 6
-  lifetime: 4
 --- !u!212 &1090992620
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25142,7 +25089,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77eee99f438a94ff58ccb5f3124a0c57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCooldown: 2
+  resetTime: 3
+  lifetime: 0.5
+  speed: 8
   arrowpoint: {fileID: 2103418789}
   arrows:
   - {fileID: 1481462783}
@@ -28423,9 +28372,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!212 &1294393283
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29168,9 +29114,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!212 &1327214430
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30438,9 +30381,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!212 &1398581225
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30585,9 +30525,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 6
-  lifetime: 4
 --- !u!212 &1419885798
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30732,9 +30669,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!212 &1425521742
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32057,9 +31991,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!212 &1465207695
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32457,9 +32388,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!212 &1473460436
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33024,9 +32952,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!212 &1481462787
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33759,9 +33684,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!212 &1504115962
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34496,9 +34418,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!212 &1525050727
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34784,9 +34703,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!212 &1531872309
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -35239,9 +35155,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!212 &1556175387
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -35464,7 +35377,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77eee99f438a94ff58ccb5f3124a0c57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCooldown: 2
+  resetTime: 3
+  lifetime: 0.5
+  speed: 8
   arrowpoint: {fileID: 1381251402}
   arrows:
   - {fileID: 1473460432}
@@ -36588,9 +36503,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!212 &1633387001
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36987,9 +36899,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!212 &1654659842
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37638,9 +37547,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!212 &1678728575
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38710,9 +38616,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!212 &1711184298
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41096,9 +40999,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!212 &1829980540
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41582,9 +41482,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 6
-  lifetime: 4
 --- !u!212 &1852832467
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -42200,9 +42097,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!212 &1886983673
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -43633,9 +43527,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!212 &1973817582
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -45919,9 +45810,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!212 &2094396229
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -47379,9 +47267,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!1 &474189333521302166
 GameObject:
   m_ObjectHideFlags: 0
@@ -47853,9 +47738,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!1 &754244093619674028
 GameObject:
   m_ObjectHideFlags: 0
@@ -48514,7 +48396,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77eee99f438a94ff58ccb5f3124a0c57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCooldown: 2
+  resetTime: 3
+  lifetime: 0.5
+  speed: 8
   arrowpoint: {fileID: 8341050343395838538}
   arrows:
   - {fileID: 3924120711703368505}
@@ -48981,9 +48865,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!1 &1419908320906609896
 GameObject:
   m_ObjectHideFlags: 0
@@ -51594,9 +51475,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!4 &3521804713994137893
 Transform:
   m_ObjectHideFlags: 0
@@ -52983,9 +52861,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!212 &4829542926340664737
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -54801,9 +54676,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!114 &6208402280893554588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55155,7 +55027,7 @@ MonoBehaviour:
   coyoteTime: 0.25
   extraJumps: 1
   wallJumpX: 1500
-  wallJumpY: 1000
+  wallJumpY: 1500
   JumpSound: {fileID: 8300000, guid: cd8194e328932b04ea173ced711457da, type: 3}
   groundLayer:
     serializedVersion: 2
@@ -57475,9 +57347,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!4 &8399785905351803984
 Transform:
   m_ObjectHideFlags: 0
@@ -57559,9 +57428,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!4 &8466248286548972293
 Transform:
   m_ObjectHideFlags: 0
@@ -57810,9 +57676,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!1 &8636280156253708760
 GameObject:
   m_ObjectHideFlags: 0
@@ -58404,9 +58267,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 1
 --- !u!224 &9124545631137306864
 RectTransform:
   m_ObjectHideFlags: 0

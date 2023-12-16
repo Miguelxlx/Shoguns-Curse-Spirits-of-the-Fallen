@@ -16,7 +16,6 @@ public class Bandit: MonoBehaviour
     [Header("Range of Attack")]
     [SerializeField] private Transform attackPointLeft;
     [SerializeField] private Transform attackPointRight;
-    [SerializeField] private float attackRange = 0.5f;
 
     [Header("Attack Sound")]
     [SerializeField] private AudioClip attackSound;

@@ -231,7 +231,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 23, y: -181}
+  m_AnchoredPosition: {x: -5.3517, y: -161.47}
   m_SizeDelta: {x: 184.2589, y: 100.5114}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &43460259350831887
@@ -342,7 +342,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -257, y: 23}
+  m_AnchoredPosition: {x: -304, y: 48}
   m_SizeDelta: {x: 180, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1425464756082284306
@@ -367,7 +367,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 523e91367637640d9829cbe98a6d1d07, type: 3}
-    m_FontSize: 80
+    m_FontSize: 100
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -449,7 +449,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 523e91367637640d9829cbe98a6d1d07, type: 3}
-    m_FontSize: 80
+    m_FontSize: 100
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -634,8 +634,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 109, y: 48}
-  m_SizeDelta: {x: 1042.9194, y: 241.6453}
+  m_AnchoredPosition: {x: 0.000015259, y: 164}
+  m_SizeDelta: {x: 448.3605, y: 140.6825}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &4450220728571646450
 Transform:
@@ -683,7 +683,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 50, y: 8}
+  m_AnchoredPosition: {x: -5.3517, y: 39.552}
   m_SizeDelta: {x: 504.9655, y: 100.5114}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &4885329892915221560
@@ -972,7 +972,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 523e91367637640d9829cbe98a6d1d07, type: 3}
-    m_FontSize: 130
+    m_FontSize: 150
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -983,7 +983,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SHOGUN'S CURSE
+  m_Text: 'SHOGUN
+
+'
 --- !u!114 &7564774371155130366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1014,7 +1016,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5012106827338481246}
   m_Layer: 5
-  m_Name: MainMenu
+  m_Name: GameOverScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1090,7 +1092,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 523e91367637640d9829cbe98a6d1d07, type: 3}
-    m_FontSize: 80
+    m_FontSize: 100
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1206,7 +1208,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 49.999985, y: -92.511}
+  m_AnchoredPosition: {x: -5.3517, y: -60.959}
   m_SizeDelta: {x: 426.8122, y: 100.5114}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8762355890483994037

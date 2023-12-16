@@ -1371,9 +1371,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!212 &124547915
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1452,7 +1449,7 @@ Transform:
   m_GameObject: {fileID: 129841138}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: -8.23, y: 0.14, z: 0.11077474}
+  m_LocalPosition: {x: -8.23, y: 1.18, z: 0.11077474}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1985,9 +1982,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!212 &174755407
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2150,7 +2144,7 @@ Transform:
   m_GameObject: {fileID: 199011379}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: -2.63, y: 0.14, z: 0.11077474}
+  m_LocalPosition: {x: -2.63, y: 1.18, z: 0.11077474}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2300,9 +2294,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!212 &205860125
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2447,9 +2438,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!212 &206208121
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2829,8 +2817,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77eee99f438a94ff58ccb5f3124a0c57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minCooldown: 3
-  maxCooldown: 5
+  resetTime: 3
+  lifetime: 3
+  speed: 12
   arrowpoint: {fileID: 336047916}
   arrows:
   - {fileID: 875971418}
@@ -2888,7 +2877,7 @@ Transform:
   m_GameObject: {fileID: 235934778}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: -6.63, y: 0.14, z: 0.11077474}
+  m_LocalPosition: {x: -6.63, y: 1.18, z: 0.11077474}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3051,7 +3040,7 @@ Transform:
   m_GameObject: {fileID: 270693391}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: -7.43, y: 0.14, z: 0.11077474}
+  m_LocalPosition: {x: -7.43, y: 1.18, z: 0.11077474}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3201,9 +3190,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!212 &275314759
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3282,7 +3268,7 @@ Transform:
   m_GameObject: {fileID: 282642906}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 0.57, y: 0.14, z: 0.11077474}
+  m_LocalPosition: {x: 0.57, y: 1.18, z: 0.11077474}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3544,7 +3530,7 @@ Transform:
   m_GameObject: {fileID: 315333412}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 3.77, y: 0.14, z: 0.11077474}
+  m_LocalPosition: {x: 3.77, y: 1.18, z: 0.11077474}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3679,9 +3665,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!212 &323038706
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4023,8 +4006,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77eee99f438a94ff58ccb5f3124a0c57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minCooldown: 3
-  maxCooldown: 5
+  resetTime: 3
+  lifetime: 3
+  speed: 12
   arrowpoint: {fileID: 1375990286}
   arrows:
   - {fileID: 205860120}
@@ -4418,7 +4402,7 @@ Transform:
   m_GameObject: {fileID: 449876581}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 2.17, y: 0.14, z: 0.11077474}
+  m_LocalPosition: {x: 2.17, y: 1.18, z: 0.11077474}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6216,7 +6200,7 @@ Transform:
   m_GameObject: {fileID: 650740431}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 4.57, y: 0.14, z: 0.11077474}
+  m_LocalPosition: {x: 4.57, y: 1.18, z: 0.11077474}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6916,9 +6900,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!212 &693861957
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7063,9 +7044,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!212 &697116997
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7294,9 +7272,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!212 &714708733
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7459,7 +7434,7 @@ Transform:
   m_GameObject: {fileID: 739550359}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 5.37, y: 0.14, z: 0.11077474}
+  m_LocalPosition: {x: 5.37, y: 1.18, z: 0.11077474}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7865,7 +7840,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 99.62332, y: 13.991301}
+  m_Offset: {x: 98.596954, y: 13.991301}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -7876,7 +7851,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8228378, y: 17.396793}
+  m_Size: {x: 0.7202072, y: 17.396793}
   m_EdgeRadius: 0
 --- !u!1 &798046504
 GameObject:
@@ -8564,9 +8539,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!212 &875971423
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8696,9 +8668,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!212 &882719836
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9044,7 +9013,7 @@ Transform:
   m_GameObject: {fileID: 901498986}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: -0.23, y: 0.14, z: 0.11077474}
+  m_LocalPosition: {x: -0.23, y: 1.18, z: 0.11077474}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10115,7 +10084,7 @@ Transform:
   m_GameObject: {fileID: 996518802}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 6.97, y: 0.14, z: 0.11077474}
+  m_LocalPosition: {x: 6.97, y: 1.18, z: 0.11077474}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10199,7 +10168,7 @@ Transform:
   m_GameObject: {fileID: 1000819261}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 1.37, y: 0.14, z: 0.11077474}
+  m_LocalPosition: {x: 1.37, y: 1.18, z: 0.11077474}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10283,7 +10252,7 @@ Transform:
   m_GameObject: {fileID: 1001262893}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 2.97, y: 0.14, z: 0.11077474}
+  m_LocalPosition: {x: 2.97, y: 1.18, z: 0.11077474}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10472,11 +10441,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3532257099357489691, guid: 2385b8d425b18474ab05aeb1e2c38975, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 101.16692
+      value: 100.42
       objectReference: {fileID: 0}
     - target: {fileID: 3532257099357489691, guid: 2385b8d425b18474ab05aeb1e2c38975, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.1040454
+      value: 23.64
       objectReference: {fileID: 0}
     - target: {fileID: 3532257099357489691, guid: 2385b8d425b18474ab05aeb1e2c38975, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10488,15 +10457,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3532257099357489691, guid: 2385b8d425b18474ab05aeb1e2c38975, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3532257099357489691, guid: 2385b8d425b18474ab05aeb1e2c38975, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3532257099357489691, guid: 2385b8d425b18474ab05aeb1e2c38975, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.7071068
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 3532257099357489691, guid: 2385b8d425b18474ab05aeb1e2c38975, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -10508,9 +10477,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3532257099357489691, guid: 2385b8d425b18474ab05aeb1e2c38975, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -90
+      value: 90
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 4604978740836163503, guid: 2385b8d425b18474ab05aeb1e2c38975, type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4604978740836163503, guid: 2385b8d425b18474ab05aeb1e2c38975, type: 3}
+      propertyPath: lifetime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4604978740836163503, guid: 2385b8d425b18474ab05aeb1e2c38975, type: 3}
+      propertyPath: resetTime
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 4978530131741396373, guid: 2385b8d425b18474ab05aeb1e2c38975, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11330,7 +11312,7 @@ Transform:
   m_GameObject: {fileID: 1110729643}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: -1.03, y: 0.14, z: 0.11077474}
+  m_LocalPosition: {x: -1.03, y: 1.18, z: 0.11077474}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11414,7 +11396,7 @@ Transform:
   m_GameObject: {fileID: 1117740932}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 6.17, y: 0.14, z: 0.11077474}
+  m_LocalPosition: {x: 6.17, y: 1.18, z: 0.11077474}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11965,9 +11947,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!212 &1163250843
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12584,7 +12563,7 @@ Transform:
   m_GameObject: {fileID: 1214319133}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: -9.03, y: 0.14, z: 0.11077474}
+  m_LocalPosition: {x: -9.03, y: 1.18, z: 0.11077474}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12752,7 +12731,7 @@ Transform:
   m_GameObject: {fileID: 1233617658}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: -5.03, y: 0.14, z: 0.11077474}
+  m_LocalPosition: {x: -5.03, y: 1.18, z: 0.11077474}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13350,9 +13329,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!212 &1288539040
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13431,7 +13407,7 @@ Transform:
   m_GameObject: {fileID: 1288806647}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: -4.23, y: 0.14, z: 0.11077474}
+  m_LocalPosition: {x: -4.23, y: 1.18, z: 0.11077474}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13692,7 +13668,7 @@ Transform:
   m_GameObject: {fileID: 1329096608}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: -3.43, y: 0.14, z: 0.11077474}
+  m_LocalPosition: {x: -3.43, y: 1.18, z: 0.11077474}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15626,9 +15602,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!212 &1530424544
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17011,7 +16984,7 @@ Transform:
   m_GameObject: {fileID: 1659113698}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: -5.83, y: 0.14, z: 0.11077474}
+  m_LocalPosition: {x: -5.83, y: 1.18, z: 0.11077474}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17161,9 +17134,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!212 &1665086717
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18115,9 +18085,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!212 &1759042662
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18560,9 +18527,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!212 &1799369623
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19599,9 +19563,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!212 &1949280225
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20121,9 +20082,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!212 &1981847076
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20202,7 +20160,7 @@ Transform:
   m_GameObject: {fileID: 1994856916}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: -1.83, y: 0.14, z: 0.11077474}
+  m_LocalPosition: {x: -1.83, y: 1.18, z: 0.11077474}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20319,7 +20277,7 @@ Transform:
   m_GameObject: {fileID: 2014688906}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 7.77, y: 0.14, z: 0.11077474}
+  m_LocalPosition: {x: 7.77, y: 1.18, z: 0.11077474}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20610,9 +20568,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!212 &2039169832
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20860,7 +20815,7 @@ Transform:
   m_GameObject: {fileID: 2081410920}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 100.96, y: 24.54, z: 0.11077474}
+  m_LocalPosition: {x: 100.42, y: 24.54, z: 0.11077474}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21730,9 +21685,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!1 &229185116314203180
 GameObject:
   m_ObjectHideFlags: 0
@@ -21827,9 +21779,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!1 &326149944849234241
 GameObject:
   m_ObjectHideFlags: 0
@@ -21997,9 +21946,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!1 &536923159215733457
 GameObject:
   m_ObjectHideFlags: 0
@@ -22769,9 +22715,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!114 &1079535993329186642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22785,9 +22728,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!1 &1127378490590636281
 GameObject:
   m_ObjectHideFlags: 0
@@ -22911,9 +22851,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!212 &1188471326280368245
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23050,9 +22987,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!1 &1252390842943609196
 GameObject:
   m_ObjectHideFlags: 0
@@ -24430,9 +24364,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!4 &2433980729966227699
 Transform:
   m_ObjectHideFlags: 0
@@ -24863,9 +24794,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!1 &2602026722389680132
 GameObject:
   m_ObjectHideFlags: 0
@@ -25725,8 +25653,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77eee99f438a94ff58ccb5f3124a0c57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minCooldown: 3
-  maxCooldown: 5
+  resetTime: 3
+  lifetime: 3
+  speed: 12
   arrowpoint: {fileID: 3062613458420585851}
   arrows:
   - {fileID: 2760440165828004573}
@@ -27780,9 +27709,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!4 &4594070975122793770
 Transform:
   m_ObjectHideFlags: 0
@@ -28105,9 +28031,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!4 &4777591210447731877
 Transform:
   m_ObjectHideFlags: 0
@@ -30114,9 +30037,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!61 &6053253285083922103
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30225,9 +30145,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!1 &6119639367029076590
 GameObject:
   m_ObjectHideFlags: 0
@@ -30416,9 +30333,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!1 &6327169621913057814
 GameObject:
   m_ObjectHideFlags: 0
@@ -30829,9 +30743,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!114 &6805372750247813299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30860,9 +30771,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!114 &6820316858326449567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30927,9 +30835,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!224 &6882660436857534528
 RectTransform:
   m_ObjectHideFlags: 0
@@ -33032,9 +32937,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!1 &8045027502079144937
 GameObject:
   m_ObjectHideFlags: 0
@@ -33183,9 +33085,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!95 &8211860952923683876
 Animator:
   serializedVersion: 5
@@ -33396,9 +33295,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 10
-  resetTime: 3
-  lifetime: 5
 --- !u!4 &8326078247259831143
 Transform:
   m_ObjectHideFlags: 0
@@ -33667,7 +33563,7 @@ Transform:
   m_GameObject: {fileID: 1500195607871772565}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 97.63, y: 4.73, z: 0.11077474}
+  m_LocalPosition: {x: -10.5, y: -1.1, z: 0.11077474}
   m_LocalScale: {x: 2.3, y: 2.3, z: 2.3}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -34464,8 +34360,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77eee99f438a94ff58ccb5f3124a0c57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minCooldown: 3
-  maxCooldown: 5
+  resetTime: 3
+  lifetime: 3
+  speed: 10
   arrowpoint: {fileID: 8808338616502949308}
   arrows:
   - {fileID: 8570941970675452442}

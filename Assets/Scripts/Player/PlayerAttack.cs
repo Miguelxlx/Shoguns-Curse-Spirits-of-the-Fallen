@@ -51,7 +51,6 @@ public class PlayerAttack : MonoBehaviour
 
     private void DamageEnemy()
     {
-        Debug.Log("Player lookign Right");
         Collider2D[] hitEnemies = Physics2D.OverlapBoxAll(attackPointRight.position, new Vector2(attackRangeX, attackRangeY), 0, enemyLayer);
         foreach (Collider2D enemy in hitEnemies)
         {

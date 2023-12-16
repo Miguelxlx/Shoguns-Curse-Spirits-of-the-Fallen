@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class Projectile : EnemyDamage
 {
-    [SerializeField] private float speed;
-    [SerializeField] private float resetTime;
-    [SerializeField] private float lifetime;
+
+    private float speed;
+    private float lifetime;
+    private float resetTime;
 
 
-    public void ActivateProjectile()
+    public void ActivateProjectile(float _speed,float _resetTime,float _lifetime)
     {
+        speed = _speed;
+        resetTime = _resetTime;
+        lifetime = _lifetime;
+
         gameObject.SetActive(true);
         StartCoroutine(DeactivateAfterLifetime());
     }

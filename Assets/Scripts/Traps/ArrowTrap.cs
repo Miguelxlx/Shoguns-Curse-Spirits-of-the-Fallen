@@ -3,20 +3,26 @@ using UnityEngine;
 
 public class ArrowTrap : MonoBehaviour
 {
-    [SerializeField] private float minCooldown = 1f;
-    [SerializeField] private float maxCooldown = 3f;
+    [Header("Arrow Details")]
+    [SerializeField] private float resetTime;
+    [SerializeField] private float lifetime;
+    [SerializeField] private float speed;
+
     [SerializeField] private Transform arrowpoint;
     [SerializeField] private GameObject[] arrows;
 
     [Header("Attack Sound")]
     [SerializeField] private AudioClip attackSound;
 
+
     private float cooldownTimer;
+    private float coolDown;
     private bool canStart;
 
     private void Awake()
     {
         canStart = false;
+        coolDown = Random.Range(3, 5);
 
         StartCoroutine(StartAfterDelay());
     }
@@ -34,7 +40,7 @@ public class ArrowTrap : MonoBehaviour
         cooldownTimer = 0;
         SoundManager.instance.PlaySound(attackSound);
         arrows[FindArrow()].transform.position = arrowpoint.position;
-        arrows[FindArrow()].GetComponent<Projectile>().ActivateProjectile();
+        arrows[FindArrow()].GetComponent<Projectile>().ActivateProjectile(speed,resetTime,lifetime);
     }
 
     private int FindArrow()
@@ -53,13 +59,8 @@ public class ArrowTrap : MonoBehaviour
         if (canStart)
         {
             cooldownTimer += Time.deltaTime;
-            if (cooldownTimer >= GetRandomCooldown())
+            if (cooldownTimer >= coolDown)
                 FireArrow();
         }
-    }
-
-    private float GetRandomCooldown()
-    {
-        return Random.Range(minCooldown, maxCooldown);
     }
 }

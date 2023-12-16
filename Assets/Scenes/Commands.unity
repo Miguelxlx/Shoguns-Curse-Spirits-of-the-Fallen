@@ -226,9 +226,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'W/D: Walk
-
-'
+  m_Text: 'L/R Arrow: Walk'
 --- !u!222 &902820253
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -488,9 +486,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Space: Attack
-
-    W/D: Walk
+  m_Text: 'Up Arrow: Jump
 
 '
 --- !u!222 &2058269328
@@ -1241,11 +1237,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Enter: Jump
+  m_Text: 'Space: Attack
 
-    Space: Attack
+    Space/W: Jump
 
-    W/D: Walk
+    A/D: Walk
 
 '
 --- !u!114 &8281457260540930836

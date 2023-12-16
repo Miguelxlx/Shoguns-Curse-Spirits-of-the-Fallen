@@ -77,7 +77,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             Jump();
-
+            
             if(Input.GetKeyDown(KeyCode.UpArrow) && !isGrounded() && wallJumpCooldown > 0)
             {
                 SoundManager.instance.PlaySound(JumpSound);

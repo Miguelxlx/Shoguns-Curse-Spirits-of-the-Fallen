@@ -24665,7 +24665,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8886f457b5b4445308a4ab927482bedf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: 1
+  nextScene: 5
   enemiesToKill: []
 --- !u!4 &2535873993999236000
 Transform:
@@ -26148,7 +26148,6 @@ MonoBehaviour:
   enemyPatrol: {fileID: 5738750153847838901}
   attackPointLeft: {fileID: 8578743009076534785}
   attackPointRight: {fileID: 8338356040846075238}
-  attackRange: 0.46
   attackSound: {fileID: 0}
 --- !u!212 &3525783900050731405
 SpriteRenderer:
@@ -31321,7 +31320,6 @@ MonoBehaviour:
   enemyPatrol: {fileID: 296620453154327384}
   attackPointLeft: {fileID: 4374188447115496940}
   attackPointRight: {fileID: 4039208535042324107}
-  attackRange: 0.46
   attackSound: {fileID: 0}
 --- !u!4 &7249892790855687393
 Transform:
@@ -32788,7 +32786,6 @@ MonoBehaviour:
   enemyPatrol: {fileID: 947778423313876398}
   attackPointLeft: {fileID: 3859264891817394970}
   attackPointRight: {fileID: 3545677662090049661}
-  attackRange: 0.46
   attackSound: {fileID: 0}
 --- !u!4 &7901049719484846615
 Transform:
